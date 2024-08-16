@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sheet Example</title>
+
+    <!-- Internal Style Sheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        h1 {
+            color: #0066cc;
+        }
+
+        .internal-style {
+            font-weight: bold;
+            color:chartreuse
+        }
+    </style>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>This is a Heading</h1>
+
+    <p style="color:coral">This paragraph uses inline style.</p>
+
+    <p class="internal-style">This paragraph is styled using the internal style sheet.</p>
+
+    <p class="external-style">This paragraph is styled using the external style sheet.</p>
+
+</body>
+</html>

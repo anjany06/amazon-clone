@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        #mainTitle {
+            color: #db3934;
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .textExample {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ff0000;
+            border-radius: 5px;
+        }
+
+        .highlight {
+            background-color: #ffc414;
+            font-weight: 900;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .customColor {
+            color: #46ae27;
+        }
+
+        .customFont {
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mainTitle">Text Styling Example</h1>
+
+    <div class="textExample highlight">
+        <p>This is a <span class="italic">paragraph</span> with various text styling attributes.</p>
+        <p class="customColor">This text has a custom color.</p>
+        <p class="customFont">This text has a different font family.</p>
+    </div>
+
+    <div class="textExample">
+        <p>This is another example with <span class="highlight">highlighted text</span>.</p>
+        <p class="italic">This text is italicized.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FRAME</title>
+    <style>
+       h1 {
+           text-align: center;
+            }
+        div {
+           display: flex;
+           width: 100%;
+           height: 500px;
+           justify-content: center;
+           align-items: center;
+           }
+        table {
+           width: 60%;
+           height: 150px;
+            }
+        td {
+           border: 1px;
+           border-style: solid;
+           border-color: black;
+           font-size: 20px;
+           }
+        #mainmenu {
+           width: 300px;
+          }
+    </style>
+    <script>
+        function Explanation1() {
+         document.getElementById("Explanation").innerHTML ="The pandemic caused by the SARS-CoV-2 virus has seen the emergence of variants, leading to ongoing global efforts for vaccination, surveillance, and control.";
+         document.getElementById("Example").innerHTML = "Delta variant increased global Covid-19 cases, prompting vaccine adaptation.";
+          }
+        function Explanation2() {
+         document.getElementById("Explanation").innerHTML ="India, like many nations, faced challenges in managing the Covid-19 crisis, involving healthcare strain, vaccination drives, and public health measures.";
+         document.getElementById("Example").innerHTML = "India faced a surge in cases, responding with vaccinations and lockdowns.";
+        }
+        function Explanation3() {
+         document.getElementById("Explanation").innerHTML ="Mitigate Covid-19 risks by following guidelines: practice social distancing, wear masks, maintain hygiene, and get vaccinated to protect yourself and others.";
+         document.getElementById("Example").innerHTML = "Wear masks, distance, wash hands—vital for Covid-19 prevention.";
+        }
+    </script>
+     </head>
+     <body>
+        <h1>Click on the topic name</h1>
+        <div>
+        <table cellpadding="10px">
+        <tr>
+        <td id="mainmenu" rowspan="2">
+        MAIN MENU<br>
+        <button onclick="Explanation1()">Covid-19 and its variants</button><br>
+        <button onclick="Explanation2()">India in Covid19</button><br>
+        <button onclick="Explanation3()">Precautions in Covid19</button>
+        </td>
+        <td>
+        <b>Explanation:</b>
+        <p id="Explanation">The pandemic caused by the SARSCoV-2 virus has seen the emergence of variants, leading to ongoing global efforts forvaccination, surveillance, and control.</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <b>Example:</b>
+        <p id="Example">Delta variant increased global Covid19 cases, prompting vaccine adaptation.</p>
+        </td>
+        </tr>
+        </table>
+        </div>
+</body>
+</html>

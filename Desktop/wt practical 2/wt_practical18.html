@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inbuilt Functions and Dialog Boxes</title>
+</head>
+<body>
+
+<script>
+  function displayMessage() {
+    alert("This is an alert message!");
+    var userName = prompt("Please enter your name:");
+    if (userName !== null && userName !== "") {
+      var message = "Hello, " + userName + "! Welcome to our website.";
+      document.getElementById("output").innerHTML = message;
+    } else {
+      document.getElementById("output").innerHTML = "User canceled or entered an empty name.";
+    }
+  }
+  displayMessage();
+</script>
+
+<div id="output" style="text-align: center; margin-top: 20px;"></div>
+
+</body>
+</html>

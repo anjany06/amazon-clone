@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handling Example</title>
+  <style>
+    #eventDiv {
+      width: 200px;
+      height: 100px;
+      background-color: #e0e0e0;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  function handleClick() {
+    alert("Button Clicked!");
+  }
+
+  function handleMouseOver() {
+    document.getElementById("eventDiv").style.backgroundColor = "#a0a0a0";
+  }
+
+  function handleMouseOut() {
+    document.getElementById("eventDiv").style.backgroundColor = "#e0e0e0";
+  }
+</script>
+
+<div id="eventDiv" onclick="handleClick()" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()">
+  Click Me
+</div>
+
+</body>
+</html>

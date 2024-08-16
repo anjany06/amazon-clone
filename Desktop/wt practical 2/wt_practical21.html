@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date, Math, and String Objects Example</title>
+</head>
+<body>
+
+<script>
+  const currentDate = new Date();
+  document.write('<p><strong>Date Object:</strong></p>');
+  document.write('<p>Current Date: ' + currentDate + '</p>');
+  document.write('<p>Day of the Week: ' + currentDate.getDay() + '</p>');
+  document.write('<p>Month: ' + (currentDate.getMonth() + 1) + '</p>');
+  document.write('<hr>');
+
+  const num = 5.7898;
+  document.write('<p><strong>Math Object:</strong></p>');
+  document.write('<p>Original Number: ' + num + '</p>');
+  document.write('<p>Rounded Number: ' + Math.round(num) + '</p>');
+  document.write('<p>Square Root: ' + Math.sqrt(num) + '</p>');
+  document.write('<p>Random Number: ' + Math.random() + '</p>');
+  document.write('<hr>');
+
+  const sampleString = 'Hello World!';
+  document.write('<p><strong>String Object:</strong></p>');
+  document.write('<p>Original String: ' + sampleString + '</p>');
+  document.write('<p>Uppercase: ' + sampleString.toUpperCase() + '</p>');
+  document.write('<p>Substring: ' + sampleString.substring(0, 5) + '</p>');
+  document.write('<p>Length: ' + sampleString.length + '</p>');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert and Confirm Boxes</title>
+</head>
+<body>
+
+<script>
+  function showAlert() {
+    alert("This is an alert box!");
+  }
+
+  function showConfirmation() {
+    var result = confirm("Do you want to proceed?");
+    if (result) {
+      document.getElementById("output").innerHTML = "User clicked OK!";
+    } else {
+      document.getElementById("output").innerHTML = "User clicked Cancel.";
+    }
+  }
+</script>
+
+<button onclick="showAlert()">Show Alert</button>
+<button onclick="showConfirmation()">Show Confirmation</button>
+
+<div id="output" style="text-align: center; margin-top: 20px;"></div>
+
+</body>
+</html>
